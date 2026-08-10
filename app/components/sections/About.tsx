@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/app/components/Reveal";
 import OutlineWord from "@/app/components/OutlineWord";
 
@@ -21,11 +22,17 @@ export default function About() {
           vide u brojkama.
         </blockquote>
         <div className="mt-8 flex flex-col items-center">
-          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand text-lg font-bold text-[#14150f]">
-            KK
-          </span>
+          <div className="relative h-14 w-14 overflow-hidden rounded-full bg-brand/20">
+            <Image
+              src="/images/team/ksenija-krstic.JPG"
+              alt="Ksenija Krstić"
+              fill
+              sizes="56px"
+              className="object-cover"
+            />
+          </div>
           <span className="mt-3 font-semibold">Ksenija Krstić</span>
-          <span className="text-sm text-black/50">Osnivačica, bashka digital</span>
+          <span className="text-sm text-black/50">CEO, bashka digital</span>
         </div>
       </Reveal>
     </section>

@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
-            <Logo className="text-white" />
+            <Logo variant="green" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
               Kreativna marketing agencija za društvene mreže, produkciju,
               kampanje i web.
@@ -33,13 +33,13 @@ export default function Footer() {
           <div>
             <span className="text-sm font-semibold text-white">Kontakt</span>
             <div className="mt-4 flex flex-col gap-2 text-sm text-white/50">
-              <a href="mailto:hej@bashka.digital" className="transition-colors hover:text-white">
-                hej@bashka.digital
+              <a href="mailto:marketingbashka@gmail.com" className="transition-colors hover:text-white">
+                marketingbashka@gmail.com
               </a>
-              <a href="tel:+381600000000" className="transition-colors hover:text-white">
-                +381 60 000 0000
+              <a href="tel:+381646411538" className="transition-colors hover:text-white">
+                +381 64 641 1538
               </a>
-              <span>Beograd, Srbija</span>
+              <span>Čačak, Srbija</span>
             </div>
           </div>
         </div>
@@ -51,6 +51,8 @@ export default function Footer() {
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={label}
                 className="text-white/60 transition-colors hover:text-white"
               >

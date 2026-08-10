@@ -87,6 +87,17 @@ body {
   animation: draw-underline 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
 }
 
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animate-dash-flow {
+  stroke-dasharray: 7 7;
+  animation: dash-flow 2.5s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

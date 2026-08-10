@@ -33,6 +33,8 @@ export default function Header() {
             <a
               key={label}
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={label}
               className="text-black/40 transition-colors hover:text-black"
             >
