@@ -58,6 +58,20 @@ body {
   animation: float 13s ease-in-out infinite reverse;
 }
 
+@keyframes pulse-scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 4s ease-in-out infinite;
+}
+
 @keyframes draw-underline {
   from {
     stroke-dashoffset: 1;

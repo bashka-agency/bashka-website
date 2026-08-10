@@ -16,18 +16,54 @@ export default function Reveal({ children, className, delay = 0 }: Props) {
     const el = ref.current;
     if (!el) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15, rootMargin: "0px 0px -80px 0px" },
-    );
+    let cancelled = false;
+    let observer: IntersectionObserver | null = null;
 
-    observer.observe(el);
-    return () => observer.disconnect();
+    const attachObserver = () => {
+      if (cancelled) return;
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer?.disconnect();
+          }
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -80px 0px" },
+      );
+      observer.observe(el);
+    };
+
+    // If the URL already has a hash, the browser may still be auto-scrolling
+    // to that anchor after hydration, which would falsely trigger reveals
+    // sitting between the top of the page and the anchor. Wait for scroll
+    // position to settle before watching for real visibility.
+    if (window.location.hash) {
+      let lastY = window.scrollY;
+      let stableFrames = 0;
+      const waitForSettle = () => {
+        if (cancelled) return;
+        const y = window.scrollY;
+        if (y === lastY) {
+          stableFrames++;
+        } else {
+          stableFrames = 0;
+          lastY = y;
+        }
+        if (stableFrames > 6) {
+          attachObserver();
+        } else {
+          requestAnimationFrame(waitForSettle);
+        }
+      };
+      requestAnimationFrame(waitForSettle);
+    } else {
+      attachObserver();
+    }
+
+    return () => {
+      cancelled = true;
+      observer?.disconnect();
+    };
   }, []);
 
   return (

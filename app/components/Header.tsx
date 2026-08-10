@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Logo from "@/app/components/Logo";
-import BookingButton from "@/app/components/booking/BookingButton";
 import { NAV_LINKS } from "@/app/components/NAV_LINKS";
+import { SOCIAL_LINKS } from "@/app/components/SOCIAL_LINKS";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,10 +28,17 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
-          <BookingButton className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-[#14150f] transition-transform hover:scale-105">
-            Zakaži poziv
-          </BookingButton>
+        <div className="hidden items-center gap-4 md:flex">
+          {SOCIAL_LINKS.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              aria-label={label}
+              className="text-black/40 transition-colors hover:text-black"
+            >
+              <Icon className="h-[18px] w-[18px]" />
+            </a>
+          ))}
         </div>
 
         <button
@@ -39,7 +46,7 @@ export default function Header() {
           aria-label="Otvori meni"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
-          className="flex h-9 w-9 flex-col items-center justify-center gap-1.5 md:hidden"
+          className="flex h-9 w-9 cursor-pointer flex-col items-center justify-center gap-1.5 md:hidden"
         >
           <span
             className={`h-0.5 w-6 bg-black transition-transform ${menuOpen ? "translate-y-2 rotate-45" : ""}`}
@@ -67,9 +74,19 @@ export default function Header() {
               </a>
             ))}
           </nav>
-          <BookingButton className="mt-4 w-full rounded-full bg-brand px-5 py-3 text-sm font-semibold text-[#14150f]">
-            Zakaži poziv
-          </BookingButton>
+
+          <div className="mt-6 flex items-center justify-center gap-6 border-t border-black/5 pt-4">
+            {SOCIAL_LINKS.map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                aria-label={label}
+                className="text-black/40 transition-colors hover:text-black"
+              >
+                <Icon className="h-5 w-5" />
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </header>

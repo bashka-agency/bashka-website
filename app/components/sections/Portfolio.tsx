@@ -1,4 +1,5 @@
 import Reveal from "@/app/components/Reveal";
+import SectionTitle from "@/app/components/SectionTitle";
 
 const WORKS = [
   {
@@ -26,14 +27,7 @@ const WORKS = [
 export default function Portfolio() {
   return (
     <section id="portfolio" className="mx-auto max-w-6xl px-6 py-24">
-      <Reveal className="max-w-xl">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-[#5c6b1f]">
-          Portfolio
-        </h2>
-        <p className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-          Istaknuti radovi.
-        </p>
-      </Reveal>
+      <SectionTitle word="portfolio">Istaknuti radovi.</SectionTitle>
 
       <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
         {WORKS.map((work, i) => (

@@ -1,5 +1,6 @@
 import Logo from "@/app/components/Logo";
 import { NAV_LINKS } from "@/app/components/NAV_LINKS";
+import { SOCIAL_LINKS } from "@/app/components/SOCIAL_LINKS";
 
 export default function Footer() {
   return (
@@ -46,8 +47,16 @@ export default function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row">
           <span>&copy; {new Date().getFullYear()} bashka digital. Sva prava zadržana.</span>
           <div className="flex gap-4">
-            <a href="#" className="transition-colors hover:text-white">Instagram</a>
-            <a href="#" className="transition-colors hover:text-white">LinkedIn</a>
+            {SOCIAL_LINKS.map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                aria-label={label}
+                className="text-white/60 transition-colors hover:text-white"
+              >
+                <Icon className="h-5 w-5" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

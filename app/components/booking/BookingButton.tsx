@@ -11,7 +11,7 @@ export default function BookingButton({ className, children }: Props) {
   const { open } = useBooking();
 
   return (
-    <button type="button" onClick={open} className={className}>
+    <button type="button" onClick={open} className={`cursor-pointer ${className ?? ""}`}>
       {children}
     </button>
   );

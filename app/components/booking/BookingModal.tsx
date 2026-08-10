@@ -44,7 +44,7 @@ export default function BookingModal() {
             type="button"
             onClick={close}
             aria-label="Zatvori"
-            className="flex h-9 w-9 items-center justify-center rounded-full text-xl leading-none text-black/50 transition-colors hover:bg-black/5 hover:text-black"
+            className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-xl leading-none text-black/50 transition-colors hover:bg-black/5 hover:text-black"
           >
             &times;
           </button>

@@ -1,53 +1,32 @@
 import BookingButton from "@/app/components/booking/BookingButton";
+import OutlineWord from "@/app/components/OutlineWord";
+import Starburst from "@/app/components/Starburst";
+import VideoCallIcon from "@/app/components/icons/VideoCallIcon";
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-white pt-20 pb-24 sm:pt-28 sm:pb-32"
+      className="relative overflow-hidden bg-white pt-24 pb-12 sm:pt-32"
     >
-      <div
-        aria-hidden
-        className="animate-float pointer-events-none absolute -top-40 right-[-10%] h-[32rem] w-[32rem] rounded-full bg-brand/30 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="animate-float-slow pointer-events-none absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-brand/20 blur-3xl"
-      />
+      <div className="pointer-events-none absolute inset-x-0 top-8 flex justify-center px-4 sm:top-4">
+        <OutlineWord className="animate-fade-up text-[4.75rem] sm:text-[8rem] md:text-[11rem] lg:text-[14rem]">
+          bashka
+        </OutlineWord>
+      </div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-start px-6">
-        <span
-          className="animate-fade-up rounded-full bg-brand/20 px-4 py-1.5 text-sm font-medium text-[#5c6b1f]"
-          style={{ animationDelay: "0ms" }}
-        >
-          Kreativna marketing agencija
-        </span>
+      <div className="animate-float pointer-events-none absolute top-20 left-1/2 h-64 w-64 -translate-x-1/2 sm:top-16 sm:h-96 sm:w-96">
+        <Starburst className="animate-pulse-scale h-full w-full text-brand/60" />
+      </div>
 
+      <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 text-center">
         <h1
-          className="animate-fade-up mt-6 max-w-3xl text-4xl font-bold tracking-tight text-balance sm:text-5xl md:text-6xl"
+          className="animate-fade-up mt-28 text-4xl leading-[1.05] font-bold tracking-tight text-[#14150f] sm:mt-36 sm:text-6xl"
           style={{ animationDelay: "120ms" }}
         >
-          Pravimo brendove koji se{" "}
-          <span className="relative inline-block whitespace-nowrap text-brand-dark">
-            pamte i prodaju
-            <svg
-              aria-hidden
-              viewBox="0 0 100 12"
-              preserveAspectRatio="none"
-              className="absolute -bottom-2 left-0 h-3 w-full text-brand"
-            >
-              <path
-                d="M0,8 Q25,2 50,7 T100,6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="6"
-                strokeLinecap="round"
-                pathLength="1"
-                className="animate-draw-underline"
-              />
-            </svg>
-          </span>
-          .
+          Kreativna
+          <br />
+          marketing agencija.
         </h1>
 
         <p
@@ -60,11 +39,14 @@ export default function Hero() {
         </p>
 
         <div
-          className="animate-fade-up mt-10 flex flex-col gap-4 sm:flex-row"
+          className="animate-fade-up mt-8 flex flex-col gap-4 sm:flex-row"
           style={{ animationDelay: "360ms" }}
         >
-          <BookingButton className="rounded-full bg-brand px-7 py-3.5 text-base font-semibold text-[#14150f] shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/40">
+          <BookingButton className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#14150f] px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-black/10 transition-all hover:-translate-y-0.5 hover:shadow-xl">
             Zakaži poziv
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand text-[#14150f] transition-transform duration-300 group-hover:scale-110">
+              <VideoCallIcon className="h-3.5 w-3.5" />
+            </span>
           </BookingButton>
           <a
             href="#portfolio"

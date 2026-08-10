@@ -1,4 +1,5 @@
 import Reveal from "@/app/components/Reveal";
+import SectionTitle from "@/app/components/SectionTitle";
 
 const TESTIMONIALS = [
   {
@@ -24,14 +25,7 @@ const TESTIMONIALS = [
 export default function Testimonials() {
   return (
     <section id="utisci" className="mx-auto max-w-6xl px-6 py-24">
-      <Reveal className="max-w-xl">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-[#5c6b1f]">
-          Utisci klijenata
-        </h2>
-        <p className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-          Šta kažu naši klijenti.
-        </p>
-      </Reveal>
+      <SectionTitle word="utisci">Šta kažu naši klijenti.</SectionTitle>
 
       <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {TESTIMONIALS.map((t, i) => (
