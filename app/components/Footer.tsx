@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <Logo variant="green" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
-              Kreativna marketing agencija za društvene mreže, produkciju,
-              kampanje i web.
+              Ne pravimo samo sadržaj. Pravimo digitalno prisustvo koje vaš
+              brend dovodi do prodaje.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function Footer() {
               <a href="tel:+381646411538" className="transition-colors hover:text-white">
                 +381 64 641 1538
               </a>
-              <span>Čačak, Srbija</span>
+              <span>Čačak · Beograd · i šire</span>
             </div>
           </div>
         </div>

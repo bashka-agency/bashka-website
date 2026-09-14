@@ -3,24 +3,19 @@ import SectionTitle from "@/app/components/SectionTitle";
 
 const WORKS = [
   {
-    title: "Rebrending — Severna kafa",
-    category: "Brend identitet · Društvene mreže",
-    gradient: "from-brand to-[#7c8f2e]",
+    title: "Vidik",
+    category: "Društvene mreže · Video produkcija",
+    src: "/images/portfolio-slike/vidik-residence.mp4",
   },
   {
-    title: "Lansiranje — Formo Studio",
-    category: "Kampanja · Produkcija",
-    gradient: "from-[#14150f] to-[#3c3f2d]",
+    title: "Popsi",
+    category: "Društvene mreže · Video produkcija",
+    src: "/images/portfolio-slike/popsi.mp4",
   },
   {
-    title: "Performans rast — Vitalis",
-    category: "Plaćene kampanje · Web",
-    gradient: "from-brand-dark to-brand",
-  },
-  {
-    title: "Sadržaj serija — Urban Kitchen",
-    category: "Video produkcija · Društvene mreže",
-    gradient: "from-[#3c3f2d] to-brand/60",
+    title: "Bolero",
+    category: "Video produkcija · Snimanje događaja",
+    src: "/images/portfolio-slike/event.mp4",
   },
 ];
 
@@ -29,16 +24,18 @@ export default function Portfolio() {
     <section id="portfolio" className="mx-auto max-w-6xl px-6 py-24">
       <SectionTitle word="portfolio">Istaknuti radovi.</SectionTitle>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {WORKS.map((work, i) => (
           <Reveal key={work.title} delay={i * 100}>
-            <div className="group cursor-pointer overflow-hidden rounded-2xl border border-black/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-black/10">
-              <div
-                className={`flex h-56 items-end bg-gradient-to-br p-6 transition-transform duration-500 group-hover:scale-105 ${work.gradient}`}
-              >
-                <span className="translate-y-1 rounded-full bg-white/90 px-4 py-1.5 text-xs font-semibold text-[#14150f] opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                  Pogledaj rad
-                </span>
+            <div className="group overflow-hidden rounded-2xl border border-black/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-black/10">
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-black">
+                <video
+                  src={work.src}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="font-semibold">{work.title}</h3>

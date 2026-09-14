@@ -8,6 +8,7 @@ import Team from "@/app/components/sections/Team";
 import Portfolio from "@/app/components/sections/Portfolio";
 import Process from "@/app/components/sections/Process";
 import Testimonials from "@/app/components/sections/Testimonials";
+import Clients from "@/app/components/sections/Clients";
 import BookingCta from "@/app/components/sections/BookingCta";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Portfolio />
         <Process />
         <Testimonials />
+        <Clients />
         <BookingCta />
       </main>
       <Footer />

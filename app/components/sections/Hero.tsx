@@ -33,9 +33,8 @@ export default function Hero() {
           className="animate-fade-up mt-6 max-w-xl text-lg leading-relaxed text-black/60"
           style={{ animationDelay: "240ms" }}
         >
-          Bashka digital je tim za društvene mreže, produkciju, kampanje i
-          web — sve na jednom mestu. Od strategije do izvršenja, gradimo
-          rezultate koje možete da merite.
+          Vaš brend zaslužuje više od lepog Instagram feeda. Gradimo
+          strategiju, sadržaj i kampanje koje ljude dovode do vaše prodaje.
         </p>
 
         <div
