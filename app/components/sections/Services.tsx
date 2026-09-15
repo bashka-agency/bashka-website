@@ -24,6 +24,7 @@ const SERVICES = [
     items: [
       "Fotografisanje i video produkcija",
       "Snimanje u studiju i na lokaciji",
+      "Snimanje dronom",
       "Montaža i editovanje video materijala",
     ],
   },

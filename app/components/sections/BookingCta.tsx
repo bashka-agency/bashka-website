@@ -4,7 +4,7 @@ import VideoCallIcon from "@/app/components/icons/VideoCallIcon";
 
 export default function BookingCta() {
   return (
-    <section className="bg-brand">
+    <section id="zakazite-poziv" className="bg-brand">
       <Reveal className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-16 text-center sm:flex-row sm:justify-between sm:text-left">
         <p className="max-w-xl text-2xl font-bold tracking-tight text-[#14150f] sm:text-3xl">
           Hajde da vaš brend učinimo vidljivim.

@@ -5,4 +5,5 @@ export const NAV_LINKS = [
   { href: "#portfolio", label: "Portfolio" },
   { href: "#kako-radimo", label: "Kako radimo" },
   { href: "#utisci", label: "Utisci" },
+  { href: "#pitanja", label: "Pitanja" },
 ];

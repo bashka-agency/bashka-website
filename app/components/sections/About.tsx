@@ -15,9 +15,9 @@ export default function About() {
 
       <Reveal className="relative mx-auto mt-8 max-w-4xl px-6 text-center sm:mt-12">
         <span className="text-6xl text-brand-dark">&ldquo;</span>
-        <blockquote className="text-2xl font-medium leading-snug tracking-tight text-balance sm:text-3xl">
+        <h2 className="text-2xl font-medium leading-snug tracking-tight text-balance sm:text-3xl">
           Ne pravimo samo sadržaj. Pravimo prisustvo.
-        </blockquote>
+        </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-black/60">
           Mi smo ženski, mlad i kreativan tim koji digitalni marketing ne

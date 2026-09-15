@@ -18,9 +18,9 @@ export default function SectionTitle({ word, children, className }: Props) {
       </div>
 
       <Reveal className="mx-auto mt-8 max-w-2xl px-6 text-center sm:mt-12">
-        <p className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
           {children}
-        </p>
+        </h2>
       </Reveal>
     </div>
   );

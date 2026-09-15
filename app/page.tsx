@@ -9,6 +9,7 @@ import Portfolio from "@/app/components/sections/Portfolio";
 import Process from "@/app/components/sections/Process";
 import Testimonials from "@/app/components/sections/Testimonials";
 import Clients from "@/app/components/sections/Clients";
+import FAQ from "@/app/components/sections/FAQ";
 import BookingCta from "@/app/components/sections/BookingCta";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Process />
         <Testimonials />
         <Clients />
+        <FAQ />
         <BookingCta />
       </main>
       <Footer />

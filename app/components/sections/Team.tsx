@@ -8,9 +8,16 @@ import SectionTitle from "@/app/components/SectionTitle";
 type Member = {
   name: string;
   role: string;
-  photo: string;
+  photo?: string;
   bio?: string[];
 };
+
+function initials(name: string) {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .join("");
+}
 
 const TEAM: Member[] = [
   {
@@ -84,6 +91,18 @@ const TEAM: Member[] = [
       "Upravo ta kombinacija tehničkog i kreativnog je ono što mi najviše prija u radu sa Bashka timom — gde ideje brzo postaju rešenja, a rešenja stvaran proizvod.",
     ],
   },
+  {
+    name: "Kristina Petrović",
+    role: "Account Manager",
+    bio: [
+      "Student sam završne godine Fakulteta za Projektni i inovacioni menadžment, smer IT. U agenciji Bashka radim kao Account Manager. Vodim društvene mreže, kreiram sadržaj i komuniciram sa klijentima.",
+      "Kroz rad na različitim projektima razvila sam veštine organizacije, digitalnog marketinga i upravljanja klijentima. Kreativna sam i radoznala, i najbolje funkcionišem u dinamičnom okruženju gde svaki projekat donosi nešto novo.",
+    ],
+  },
+  {
+    name: "Mina Novaković",
+    role: "Account Manager",
+  },
 ];
 
 export default function Team() {
@@ -118,14 +137,20 @@ export default function Team() {
               onClick={() => setSelected(member)}
               className={`group flex w-full flex-col items-center text-center ${member.bio ? "cursor-pointer" : "cursor-default"}`}
             >
-              <div className="relative h-32 w-32 overflow-hidden rounded-full bg-brand/20 transition-transform duration-300 group-hover:scale-110 sm:h-36 sm:w-36">
-                <Image
-                  src={`/images/team/${member.photo}`}
-                  alt={member.name}
-                  fill
-                  sizes="(min-width: 640px) 144px, 128px"
-                  className="object-cover"
-                />
+              <div className="relative flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-brand/20 transition-transform duration-300 group-hover:scale-110 sm:h-36 sm:w-36">
+                {member.photo ? (
+                  <Image
+                    src={`/images/team/${member.photo}`}
+                    alt={member.name}
+                    fill
+                    sizes="(min-width: 640px) 144px, 128px"
+                    className="object-cover"
+                  />
+                ) : (
+                  <span className="text-2xl font-bold text-[#5c6b1f]">
+                    {initials(member.name)}
+                  </span>
+                )}
               </div>
               <span className="mt-4 font-semibold">{member.name}</span>
               <span className="text-sm text-black/50">{member.role}</span>
@@ -164,14 +189,20 @@ export default function Team() {
             </button>
 
             <div className="flex flex-col items-center text-center">
-              <div className="relative h-24 w-24 overflow-hidden rounded-full bg-brand/20">
-                <Image
-                  src={`/images/team/${selected.photo}`}
-                  alt={selected.name}
-                  fill
-                  sizes="96px"
-                  className="object-cover"
-                />
+              <div className="relative flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-brand/20">
+                {selected.photo ? (
+                  <Image
+                    src={`/images/team/${selected.photo}`}
+                    alt={selected.name}
+                    fill
+                    sizes="96px"
+                    className="object-cover"
+                  />
+                ) : (
+                  <span className="text-lg font-bold text-[#5c6b1f]">
+                    {initials(selected.name)}
+                  </span>
+                )}
               </div>
               <span className="mt-4 text-lg font-semibold">{selected.name}</span>
               <span className="text-sm text-black/50">{selected.role}</span>
