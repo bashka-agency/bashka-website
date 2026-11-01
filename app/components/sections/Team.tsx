@@ -94,7 +94,7 @@ const TEAM: Member[] = [
   {
     name: "Kristina Petrović",
     role: "Account Manager",
-    photo: "kristina-petrovic.jpg",
+    photo: "kristina-petrovic-teksas.jpg",
     bio: [
       "Student sam završne godine Fakulteta za Projektni i inovacioni menadžment, smer IT. U agenciji Bashka radim kao Account Manager. Vodim društvene mreže, kreiram sadržaj i komuniciram sa klijentima.",
       "Kroz rad na različitim projektima razvila sam veštine organizacije, digitalnog marketinga i upravljanja klijentima. Kreativna sam i radoznala, i najbolje funkcionišem u dinamičnom okruženju gde svaki projekat donosi nešto novo.",
@@ -103,7 +103,7 @@ const TEAM: Member[] = [
   {
     name: "Mina Novaković",
     role: "Account Manager",
-    photo: "mina-novakovic.jpg",
+    photo: "mina-novakovic-stepenice.jpg",
   },
 ];
 
