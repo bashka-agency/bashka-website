@@ -1,7 +1,7 @@
 const resolvedUrl =
   process.env.SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  (process.env.NODE_ENV === "production"
+    ? "https://bashka.rs"
     : "http://localhost:3000");
 
 export const SITE_URL = resolvedUrl;
