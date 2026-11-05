@@ -20,13 +20,19 @@ const title = "Bashka Digital — Marketing agencija Čačak i Beograd";
 const description =
   "Bashka Digital je marketing agencija u Čačku i Beogradu — društvene mreže, produkcija sadržaja, kampanje i web. Zakažite besplatan poziv i pokrenimo vaš sledeći projekat.";
 
+// Link previews (WhatsApp, Instagram, LinkedIn…) don't affect ranking, so they
+// carry the brand message; the city keywords stay in title/description for Google.
+const shareTitle = "Bashka Digital · Kreativna marketing agencija";
+const shareDescription =
+  "Vaš brend zaslužuje više od lepog Instagram feeda. Gradimo strategiju, sadržaj i kampanje koje ljude dovode do vaše prodaje.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title,
   description,
   openGraph: {
-    title,
-    description,
+    title: shareTitle,
+    description: shareDescription,
     url: SITE_URL,
     siteName: BUSINESS.name,
     locale: "sr_RS",
@@ -34,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title,
-    description,
+    title: shareTitle,
+    description: shareDescription,
   },
 };
 
