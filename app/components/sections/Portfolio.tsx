@@ -6,16 +6,19 @@ const WORKS = [
     title: "Vidik",
     category: "Društvene mreže · Video produkcija",
     src: "/images/portfolio-slike/vidik-residence.mp4",
+    poster: "/images/portfolio-slike/vidik-residence-poster.webp",
   },
   {
     title: "Popsi",
     category: "Društvene mreže · Video produkcija",
     src: "/images/portfolio-slike/popsi.mp4",
+    poster: "/images/portfolio-slike/popsi-poster.webp",
   },
   {
     title: "Bolero",
     category: "Video produkcija · Snimanje događaja",
     src: "/images/portfolio-slike/event.mp4",
+    poster: "/images/portfolio-slike/event-poster.webp",
   },
 ];
 
@@ -31,6 +34,7 @@ export default function Portfolio() {
               <div className="relative aspect-[9/16] w-full overflow-hidden bg-black">
                 <video
                   src={work.src}
+                  poster={work.poster}
                   controls
                   preload="metadata"
                   playsInline
