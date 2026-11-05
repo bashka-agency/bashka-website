@@ -23,7 +23,7 @@ const TEAM: Member[] = [
   {
     name: "Ksenija Krstić",
     role: "CEO",
-    photo: "ksenija-krstic.JPG",
+    photo: "ksenija-krstic.webp",
     bio: [
       "Ja sam Ksenija Krstić, osnivačica i generalna direktorka agencije Bashka. Diplomirala sam žurnalistiku na Fakultetu političkih nauka u Beogradu, a u digitalnom marketingu sam od 2019. godine.",
       "Kroz dugogodišnji rad ostvarila sam saradnju sa preko 100 klijenata i realizovala više od 300 kampanja za domaće i internacionalne brendove poput NIVEA, Eucerin, Reebok, DM drogerije i Maybelline, uz zajednicu od preko 200.000 pratilaca na društvenim mrežama koje smo zajedno izgradili. Moja ekspertiza obuhvata razvoj kreativnih strategija, produkciju sadržaja, influenser marketing i kompletno upravljanje društvenim mrežama, a znanje prenosim i kao predavač digitalnog marketinga u Obrazovnom centru Sveti Sava.",
@@ -34,7 +34,7 @@ const TEAM: Member[] = [
   {
     name: "Ana-Marija Gnjidić",
     role: "Community Manager",
-    photo: "ana-marija.JPG",
+    photo: "ana-marija.webp",
     bio: [
       "Moje ime je Ana-Marija Gnjidić. Završila sam Marketing na Ekonomskom fakultetu u Beogradu, gde trenutno privodim kraju i master studije. Oduvek su me privlačili kreativnost, komunikacija i sve ono što dobru ideju pretvara u priču koja se pamti.",
       "Van posla i fakulteta, najviše volim da putujem, čitam, upoznajem nove ljude i kulture što pomaže u razvoju moje kreativnosti.",
@@ -44,7 +44,7 @@ const TEAM: Member[] = [
   {
     name: "Ivana Stanković",
     role: "Fotograf i videograf",
-    photo: "ivana-stankovic.JPG",
+    photo: "ivana-stankovic.webp",
     bio: [
       "Ja sam Ivana Stanković, fotograf i videograf u agenciji Baška. Rad u kreativnoj industriji za mene predstavlja veliko iskustvo, kroz koje sam imala priliku da upoznam veliki broj različitih klijenata, ljudi i zanimljivih projekata.",
       "Ono što najviše volim u svom poslu jeste njegova kreativnost i raznolikost. Svaki dan donosi nešto novo – novi projekat, novu ideju, nove ljude i nove izazove. Upravo zato ovaj posao za mene nikada nije statičan ni monoton. Dinamično okruženje i mogućnost da kroz fotografiju i video zabeležim ideje, emocije i trenutke ono su što me svakodnevno inspiriše.",
@@ -54,7 +54,7 @@ const TEAM: Member[] = [
   {
     name: "Kristina Risimović",
     role: "Social Media Manager",
-    photo: "kristina-risimovic.JPG",
+    photo: "kristina-risimovic.webp",
     bio: [
       "Ja sam Kristina Risimović – po struci sam diplomirani inženjer Organizacionih nauka. Na Fakultetu Organizacionih Nauka diplomirala sam 2024. godine na smeru Informacioni sistemi i tehnologije.",
       "U agenciji za digitalni marketing Bashka radim od marta 2025. godine na poziciji Social Media Manager (menadžer društvenih mreža).",
@@ -65,7 +65,7 @@ const TEAM: Member[] = [
   {
     name: "Lana Bačić",
     role: "Account Manager",
-    photo: "lana.jpg",
+    photo: "lana.webp",
     bio: [
       "Ja sam Lana Bačić, studiram International Business u Amsterdamu i u BASHKA timu radim kao Account Manager. Volim kreiranje sadržaja, putovanja i upoznavanje novih ljudi i kultura.",
       "BASHKA je za mene mnogo više od posla, ona je mesto uz koje sam profesionalno odrasla, mnogo naučila i u kojem nastavljam da se razvijam, doprinosim svojim idejama i spajam kreativnost sa ljubavlju prema marketingu.",
@@ -74,7 +74,7 @@ const TEAM: Member[] = [
   {
     name: "Tamara Parežanović",
     role: "Grafički dizajner",
-    photo: "tamara-parezanovic.JPG",
+    photo: "tamara-parezanovic.webp",
     bio: [
       "Ja sam Tamara Parežanović, grafički dizajner. Završila sam Grafički dizajn u Beogradu, a danas svoje znanje i kreativnost primenjujem kroz rad u agenciji za digitalni marketing Bashka, gde sam zadužena za kreiranje vizuelnog sadržaja.",
       "Moj posao je kreativan, dinamičan i pruža mi priliku da svakom projektu pristupim na drugačiji način. Najviše volim slobodu koju imam u procesu kreiranja sadržaja za društvene mreže, gde svoje ideje mogu da pretočim u vizuelna rešenja koja odgovaraju potrebama i karakteru svakog klijenta. Ipak, kreativnost uvek usklađujem sa zahtevima, ciljevima i vizuelnim identitetom brenda, kako bi svaki sadržaj bio prepoznatljiv i dosledan.",
@@ -84,7 +84,7 @@ const TEAM: Member[] = [
   {
     name: "Jana Marković",
     role: "IT Project Manager",
-    photo: "jana-markovic.jpeg",
+    photo: "jana-markovic.webp",
     bio: [
       "Ja sam Jana Marković, IT Project Manager u agenciji Bashka. Pravim sajtove i web aplikacije i vodim projekte od prve ideje do trenutka kada krenu uživo.",
       "Volim da budem prisutna na celom tom putu — dok se ideja pretvara u plan, plan u dizajn, a dizajn u nešto što stvarno radi. Počela sam kao iOS developer, pa razumem obe strane priče: znam šta je tehnički moguće i koliko iskreno traje, ali i kako sve to spojiti da se lepo isporuči.",
@@ -94,7 +94,7 @@ const TEAM: Member[] = [
   {
     name: "Kristina Petrović",
     role: "Account Manager",
-    photo: "kristina-petrovic-teksas.jpg",
+    photo: "kristina-petrovic.webp",
     bio: [
       "Student sam završne godine Fakulteta za Projektni i inovacioni menadžment, smer IT. U agenciji Bashka radim kao Account Manager. Vodim društvene mreže, kreiram sadržaj i komuniciram sa klijentima.",
       "Kroz rad na različitim projektima razvila sam veštine organizacije, digitalnog marketinga i upravljanja klijentima. Kreativna sam i radoznala, i najbolje funkcionišem u dinamičnom okruženju gde svaki projekat donosi nešto novo.",
@@ -103,7 +103,7 @@ const TEAM: Member[] = [
   {
     name: "Mina Novaković",
     role: "Account Manager",
-    photo: "mina-novakovic-stepenice.jpg",
+    photo: "mina-novakovic.webp",
   },
 ];
 

@@ -36,9 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# cloudflare (local wrangler dev state)
+.wrangler
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
-# raw source footage (unused, uncompressed originals kept locally only)
-public/images/portfolio-slike/*-original.*
+# full-resolution source photos and footage, kept locally only (outside public/ so they never reach the build)
+/media-originals/
