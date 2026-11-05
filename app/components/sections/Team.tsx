@@ -86,9 +86,9 @@ const TEAM: Member[] = [
     role: "IT Project Manager",
     photo: "jana-markovic.webp",
     bio: [
-      "Ja sam Jana Marković, IT Project Manager u agenciji Bashka. Pravim sajtove i web aplikacije i vodim projekte od prve ideje do trenutka kada krenu uživo.",
-      "Volim da budem prisutna na celom tom putu — dok se ideja pretvara u plan, plan u dizajn, a dizajn u nešto što stvarno radi. Počela sam kao iOS developer, pa razumem obe strane priče: znam šta je tehnički moguće i koliko iskreno traje, ali i kako sve to spojiti da se lepo isporuči.",
-      "Upravo ta kombinacija tehničkog i kreativnog je ono što mi najviše prija u radu sa Bashka timom — gde ideje brzo postaju rešenja, a rešenja stvaran proizvod.",
+      "Ja sam Jana Marković, IT Project Manager u agenciji Bashka. Bavim se izradom sajtova i web aplikacija i vodim projekte od prve ideje do trenutka kada zažive na internetu.",
+      "Najviše volim da budem uz projekat na celom tom putu, dok se ideja pretvara u plan, plan u dizajn, a dizajn u rešenje koje zaista radi. Karijeru sam počela kao iOS developer, pa razumem obe strane priče. Znam šta je tehnički izvodljivo i koliko realno traje, ali i kako sve to uklopiti da klijent na kraju dobije kvalitetan proizvod.",
+      "U radu sa Bashka timom najviše mi prija upravo ta kombinacija tehničkog i kreativnog. Ovde ideje brzo postaju rešenja, a rešenja pravi proizvodi.",
     ],
   },
   {
@@ -101,9 +101,13 @@ const TEAM: Member[] = [
     ],
   },
   {
-    name: "Mina Novaković",
+    name: "Mina Todorović",
     role: "Account Manager",
     photo: "mina-novakovic.webp",
+    bio: [
+      "Mina Todorović (rođ. Novaković) rođena je 18. januara 2000. godine u Čačku, gde je završila društveno-jezički smer u Gimnaziji. Apsolventkinja je novinarstva na Fakultetu političkih nauka u Beogradu.",
+      "Svoj fokus u oblasti digitalnog marketinga, videografije i kreiranja vizuelnog sadržaja usmerila je kroz uspešne saradnje sa više desetina brendova i lokalnih biznisa iz Beograda i Čačka kroz Vantage produkcijsku kuću, kao i kroz saradnju sa agencijom Bashka.",
+    ],
   },
 ];
 
